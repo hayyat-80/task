@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagratica</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="dropdown">
+            <select name="lang" id="lang">
+                <option value="">English</option>
+                <option value="">Germany</option>
+            </select>
+            <select name="c" id="c">
+                <option value="">USD</option>
+                <option value="">EUR</option>
+                <option value="">TRY</option>
+                <option value="">CAD</option>
+                <option value="">JPY</option>
+            </select>
+        </div>
+        <div class="msg">
+            MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”
+        </div>
+        <div class="nav">
+            <div class="menu1">
+                <a href="#">HOME</a>
+                <a href="#" onclick="openNav()">STYLE 2020<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#" onclick="openNav()">PRODUCTS<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#" onclick="openNav()">SHOP<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#" onclick="openNav()">LOOKBOOK<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#">BLOG</a>
+                <a href="#">FAQ</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrappar">
+        <header>
+            <nav>
+                <label for="toggle" id="tog">&#9776;</label>
+                <input onclick="mytoggle()" type="checkbox" id="toggle" />
+                <div class="menu2">
+                    <a href="#" style="margin-top: 20px;">HOME</a>
+                    <a href="#" onclick="openNav()">STYLE 2020<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#" onclick="openNav()">PRODUCTS<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#" onclick="openNav()">SHOP<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#" onclick="openNav()">LOOKBOOK<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#">BLOG</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="logo"><img id="logo" src="./images/logo.png" alt=""></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">REGISTER</a></li>
+                        <li><a href="">MY WISHLIST</a></li>
+                        <li><a href="" onclick="openNavc()">CART<span class="badge">0</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-content">
+                <div class="heading">
+                    <h1>SPRING SUMMER</h1>
+                </div>
+                <div class="detail">
+                    <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                </div>
+
+                <div class="button">
+                    <a href="#" style="margin-left:auto;">
+                        Shop The Collection
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <!-- <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a> -->
+        </div>
+    </div>
+    <div id="myNavc" class="overlayc">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <div class="overlay-content">
+            <!-- <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a> -->
+        </div>
+    </div>
+    <div class="model">
+        <div class="forher">
+            <div class="banner">
+                <h2>SHOP FOR HER</h2>
+                <div class="text">
+                    <p>DOBORTIS SCELERISQUE BLANDIT LOREM COSMOPOLIS</p>
+                </div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="forhim">
+            <div class="banner">
+                <h2>SHOP FOR HER</h2>
+                <div class="text">
+                    <p>DOBORTIS SCELERISQUE BLANDIT LOREM COSMOPOLIS</p>
+                </div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="parallax"></div>
+        <div class="banner">
+            <div class="heading1">
+                COSMOPOLITAN
+            </div>
+            <h2>#TRENDING NOW</h2>
+            <div class="text">
+                <p>DOBORTIS SCELERISQUE BLANDIT COSMOPOLIS DE LOREMOUS<br>DELIS ELEMENTUM TRISTIQUE CONSECTETUR QUAM
+                    URNA VEHICULA LACUS NEC FERMENTUM.</p>
+            </div>
+
+            <a href="" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="textarea">
+                <p>FREE SHIPPING WORLDWIDE. NO MINIMUM</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="textarea" style="color: #e95144">
+                <p>20% OFF YOUR FIRST ORDER</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="textarea">
+                <p>SECURE CHECKOUT GUARANTEE</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h2>Featured Products</h2>
+    </div>
+    <div class="collecton">
+        <div class="prow">
+            <img id="pimg" onmouseover="newImg()" onmouseout="oldImg()" src="./images/3_1bd8fb66-f20a-40d4-82fe-0cc507e37434.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="pdetail">
+                <h3>LEATHER JACKET FOR GIRLS - BLACK</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $20.00
+                    </div>
+                    <div class="newprice">
+                        $1,200.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+        <div class="prow">
+            <img id="pimg1" onmouseover="newImg1()" onmouseout="oldImg1()" src="./images/5.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="pdetail">
+                <h3>LEATHER JACKET - BROWN</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $5.00
+                    </div>
+                    <div class="newprice">
+                        $2.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+        <div class="prow">
+            <img id="pimg2" onmouseover="newImg2()" onmouseout="oldImg2()" src="./images/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="pdetail">
+                <h3>CHECK SHIRT - MEN</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $20.00
+                    </div>
+                    <div class="newprice">
+                        $1,200.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+        <div class="prow">
+            <img id="pimg3" onmouseover="newImg3()" onmouseout="oldImg3()" src="./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="pdetail">
+                <h3>PAINTED SHIRT</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $10.00
+                    </div>
+                    <div class="newprice">
+                        $5.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <a href="#">Show More</a> 
+    </div>
+
+    <div class="title">
+        <h2>TOP BRANDS</h2>
+        <p>Naminos condimentum dui id enim selementum de tincidunts cosmo de lorem metropolis</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("white");
+                // $(".menu1").addClass("white");
+                document.getElementById("logo").src = "./images/logo-black.png";
+            }
+            else {
+                $("nav").removeClass("white");
+                // $(".menu1").removeClass("white");
+                document.getElementById("logo").src = "./images/logo.png";
+            }
+        })
+        function mytoggle() {
+            var x = document.getElementById("toggle").checked;
+            if (x == true) {
+                document.getElementById("tog").innerHTML = '&#9932;';
+                console.log("check", x);
+            }
+            else {
+                document.getElementById("tog").innerHTML = '&#9776;';
+                console.log("check", x);
+            }
+        }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        function openNavc() {
+            document.getElementById("myNavc").style.width = "100%";
+        }
+
+        function newImg() {
+            document.getElementById("pimg").src = "./images/1_930d721b-89c5-4317-8654-ccf075bb7924.jpg";
+            document.getElementById("prow").addClass("hov"); 
+        }
+
+        function oldImg() {
+            document.getElementById("pimg").src = "./images/3_1bd8fb66-f20a-40d4-82fe-0cc507e37434.jpg";
+        }
+
+        function newImg1() {
+            document.getElementById("pimg1").src = "./images/1.jpg";
+        }
+
+        function oldImg1() {
+            document.getElementById("pimg1").src = "./images/5.jpg";
+        }
+
+        function newImg2() {
+            document.getElementById("pimg2").src = "./images/himanshu-dewangan-SnSUXYAlLZg-unsplash.jpg";
+        }
+
+        function oldImg2() {
+            document.getElementById("pimg2").src = "./images/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg";
+        }
+
+        function newImg3() {
+            document.getElementById("pimg3").src = "./images/himanshu-dewangan-dGiap4wWuMY-unsplash.jpg";
+        }
+
+        function oldImg3() {
+            document.getElementById("pimg3").src = "./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg";
+        }
+    </script>
+</body>
+
+</html>
